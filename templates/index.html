@@ -17,7 +17,7 @@
      <form action="msg" method="post">
                <div class="search-bar mx-auto mt-5 input-group mb-3">
                <input type="text" class="form-control rounded-pill" name="userMsg" id="userMsg" placeholder="How was your day?" aria-label="Recipient's username" aria-describedby="button-addon2">
-               <button class="btn btn-outline-secondary rounded-pill" type="button" id="sendBtn" location.href="window.location.href='/msg'">Send</button>
+               <button class="btn btn-outline-secondary rounded-pill" type="button" id="sendBtn" onclick="location.href='/msg'">Send</button>
              </div>
      </form>
      <script>
@@ -37,8 +37,5 @@
           })
      </script>
 
-     {% if result %}
-          <p>{{result}}</p>
-     {% endif %}
 </body>
 </html>

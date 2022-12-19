@@ -47,11 +47,11 @@ def home():
 @app.route('/msg', methods = ['POST', 'GET'])
 def msg():
    msg = request.form['userMsg']
-   res={
-      'name':'user',
-      'msg':msg
-   }
-   return jsonify(res)
+   # res={
+   #    'name':'user',
+   #    'msg':msg
+   # }
+   return render_template('first.html', msg)
 # @app.route('/first')
 # def first():
 #     return render_template('first.html')
